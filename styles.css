@@ -42,9 +42,15 @@ body {
 .menu-items {
     list-style: none;
     display: none;
+    flex-direction: column;
+    text-align: center;
+}
+.menu-items li {
+    margin: 10px 0;
 }
 
 .menu-items li a {
+    font-size: 20px;
     text-decoration: none;
     color: #FFFFFF;
 }
@@ -136,6 +142,8 @@ nav ul li a {
     background-repeat: no-repeat;
     color: #E0E0E0;
     height: 100vh;
+    text-align: center;
+    padding-top: 800px;
 }
 
 /* Summary on the Left */
@@ -360,8 +368,17 @@ nav ul li a {
 /* responsive (Iphone se) */
 
 @media (max-width: 768px) {
+    
+    body {
+        font-size: 16px;
+    }
+
     .mobile-menu {
         display: block; 
+    }
+
+    .menu-icon {
+        display: block;
     }
 
     nav ul {
@@ -400,5 +417,100 @@ nav ul li a {
     
     .about-summary, .skills {
         width: 90%;
+    }
+
+    /* blog */
+    .telegram-post-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .telegram-post {
+        width: 90%;
+    }
+
+
+
+}
+
+@media (max-width: 768px) {
+    .about-section {
+        padding-top: 20px; 
+        height: auto; 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-summary,
+    .skills {
+        width: 100%; 
+        text-align: center;
+    }
+
+    .skills ul li {
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .portfolio-section .projects {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .portfolio-section .project {
+        width: 100%; 
+        margin: 20px 0; 
+    }
+
+    .portfolio-section h2 {
+        margin-top: 30px; 
+    }
+}
+
+@media (max-width: 768px) {
+    .contact-section {
+        flex-direction: column;
+        align-items: center;
+        padding-top: 1000px;
+    }
+
+    .contact-info,
+    .contact-form {
+        width: 100%; 
+        text-align: center;
+    }
+
+    .contact-info ul li {
+        margin-bottom: 20px; 
+    }
+
+    .contact-form label {
+        font-size: 20px; 
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        width: 100%;
+    }
+
+    .contact-form button {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column; 
+        align-items: center;
+    }
+
+    .footer-content p {
+        text-align: center;
+    }
+
+    .social-links {
+        margin-top: 20px; 
     }
 }
