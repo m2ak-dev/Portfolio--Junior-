@@ -131,6 +131,7 @@ nav ul li a {
     background-repeat: no-repeat;
     color: #E0E0E0;
     height: 100vh;
+    margin-top: 55px;
 }
 
 /* Summary on the Left */
@@ -152,7 +153,6 @@ nav ul li a {
 
 .about-summary,
 .skills {
-    
     width: 50%;
     text-align: left;
     padding: 20px;
@@ -394,17 +394,3 @@ nav ul li a {
     }
 }
 
-@media (max-width: 768px) {
-    .about-summary, .skills {
-        width: 100%; 
-        padding: 20px;
-    }
-
-    .about-summary h2, .skills h2 {
-        font-size: 28px; 
-    }
-
-    .about-summary p, .skills ul {
-        font-size: 16px; 
-    }
-}
