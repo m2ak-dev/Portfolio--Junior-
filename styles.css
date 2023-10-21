@@ -393,3 +393,18 @@ nav ul li a {
         background-position: right center;
     }
 }
+
+@media (max-width: 768px) {
+    .about-summary, .skills {
+        width: 100%; 
+        padding: 20px;
+    }
+
+    .about-summary h2, .skills h2 {
+        font-size: 28px; 
+    }
+
+    .about-summary p, .skills ul {
+        font-size: 16px; 
+    }
+}
