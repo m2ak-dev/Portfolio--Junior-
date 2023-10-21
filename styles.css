@@ -29,6 +29,29 @@ body {
     align-items: center;
 }
 
+/* start of responsive */
+.mobile-menu {
+    display: none; /* mobile responsive */
+}
+
+.menu-icon {
+    display: block; 
+    cursor: pointer; 
+}
+
+.menu-items {
+    list-style: none;
+    display: none;
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 4px 0;
+}
+/* end of responsive */
+
 /* Navigation Menu */
 nav ul {
     height: 12%;
@@ -62,7 +85,7 @@ nav ul li a {
 .home-section {
     background-image: url("img/homelast.jpg");
     background-size: cover;
-    background-position: center;
+    background-position: center center;
     background-repeat: no-repeat;
     color: #FFFFFF;
     text-align: center;
@@ -330,66 +353,43 @@ nav ul li a {
     background-color: #555;
 }
 
+/* responsive (Iphone se) */
+
 @media (max-width: 768px) {
-    .contact-section {
+    .mobile-menu {
+        display: block; 
+    }
+
+    nav ul {
+        display: none; 
+    }
+
+    .menu-items.active {
+        display: flex;
         flex-direction: column;
     }
+}
 
-    .contact-info, .contact-form {
-        width: 100%;
+@media (max-width: 380px) {
+    .home-content h2 {
+        font-size: 25px;
+    }
+
+    .home-content p {
+        font-size: 9px;
+        line-height: 1.5;
+    }
+    .social-links a {
+        margin: 5px;
+    }
+
+    .social-links img {
+        width: 20px;
     }
 }
 
-button:hover {
-    background-color: #555; 
-    color: #FFFFFF;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); 
-}
-
-button:active {
-    background-color: #ffffff; 
-    color: #000000; 
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); 
-}
-
-/* footer */
-.footer-section {
-    background-color: #121212;
-    color: #FFFFFF;
-    padding: 20px 0;
-    text-align: center;
-}
-
-.footer-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
-.footer-content p {
-    font-size: 16px;
-}
-
-.social-links {
-    display: flex;
-    gap: 10px;
-}
-
-.social-links a img {
-    width: 24px;
-    height: 24px;
-    transition: transform 0.2s;
-}
-
-.social-links a img:hover {
-    transform: scale(1.2);
-}
-
-.border-sections {
-    border: none;
-    height: 5px;
-    background: linear-gradient(90deg, transparent 0%, #00f 25%, transparent 50%, #00f 75%, transparent 100%);
-    background-size: 100% 5px;
-    background-repeat: no-repeat;
+@media (max-width: 380px) {
+    .home-section {
+        background-position: left center;
+    }
 }
