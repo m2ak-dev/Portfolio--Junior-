@@ -44,6 +44,11 @@ body {
     display: none;
 }
 
+.menu-items li a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
 .bar {
     width: 25px;
     height: 3px;
@@ -131,7 +136,6 @@ nav ul li a {
     background-repeat: no-repeat;
     color: #E0E0E0;
     height: 100vh;
-    margin-top: 55px;
 }
 
 /* Summary on the Left */
@@ -368,9 +372,7 @@ nav ul li a {
         display: flex;
         flex-direction: column;
     }
-}
 
-@media (max-width: 768px) {
     .home-content h2 {
         font-size: 25px;
     }
@@ -386,11 +388,17 @@ nav ul li a {
     .social-links img {
         width: 20px;
     }
-}
 
-@media (max-width: 768px) {
     .home-section {
         background-position: right center;
     }
-}
 
+    .about-section {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .about-summary, .skills {
+        width: 90%;
+    }
+}
