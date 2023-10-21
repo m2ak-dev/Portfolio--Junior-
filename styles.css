@@ -390,6 +390,6 @@ nav ul li a {
 
 @media (max-width: 768px) {
     .home-section {
-        background-position: left center;
+        background-position: right center;
     }
 }
