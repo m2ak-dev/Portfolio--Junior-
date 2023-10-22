@@ -7,3 +7,4 @@ document.addEventListener("DOMContentLoaded", function() {
         menuItems.classList.toggle('active');
     });
 });
+
