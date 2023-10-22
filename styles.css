@@ -408,6 +408,7 @@ nav ul li a {
     }
 
     .home-section {
+        display: block;
         background-position: right center;
     }
 
