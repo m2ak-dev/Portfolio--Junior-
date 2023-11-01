@@ -281,6 +281,11 @@ nav ul li a {
     background-color: #555;
 }
 
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+}
+
 @media (max-width: 1080px) {
     .projects {
         flex-direction: column;
